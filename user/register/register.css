@@ -1,0 +1,462 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&display=swap');
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    background: #232323;
+    height: 100vh;
+}
+
+.formulario {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 700px;
+    background: #fff;
+    border-radius: 10px;
+}
+
+.formulario h1 {
+    text-align: center;
+    padding: 0 0 30px 0;
+    border-bottom: 1px solid silver;
+}
+
+.formulario form {
+    padding: 0 40px;
+    box-sizing: border-box;
+
+}
+
+/*Username*/
+
+form .username {
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin: 30px 0;
+}
+
+.username input {
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+
+}
+
+.username label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+    ;
+}
+
+.username span::before {
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: #8FA354;
+    transition: .5s;
+}
+
+.username input:focus~label,
+.username input:focus~label {
+    top: -5px;
+    color: #8FA354;
+}
+
+.username input:focus~span::before,
+.username input:focus~span::before {
+    width: 100%;
+}
+
+/*Password*/
+
+form .password {
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin: 30px 0;
+}
+
+.password input {
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+
+}
+
+.password label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+    ;
+}
+
+.password span::before {
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: #8FA354;
+    transition: .5s;
+}
+
+.password input:focus~label,
+.password input:focus~label {
+    top: -5px;
+    color: #8FA354;
+}
+
+.password input:focus~span::before,
+.password input:focus~span::before {
+    width: 100%;
+}
+
+/*Confirmar Contraseña*/
+form .confirmpassword {
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin: 30px 0;
+}
+
+.confirmpassword input {
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+
+}
+
+.confirmpassword label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+    ;
+}
+
+.confirmpassword span::before {
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: #8FA354;
+    transition: .5s;
+}
+
+.confirmpassword input:focus~label,
+.confiermpassword input:focus~label {
+    top: -5px;
+    color: #8FA354;
+}
+
+.confirmpassword input:focus~span::before,
+.confirmpassword input:focus~span::before {
+    width: 100%;
+}
+
+/*Correo*/
+form .email {
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin: 30px 0;
+}
+
+.email input {
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+
+}
+
+.email label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+    ;
+}
+
+.email span::before {
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: #8FA354;
+    transition: .5s;
+}
+
+.email input:focus~label,
+.email input:focus~label {
+    top: -5px;
+    color: #8FA354;
+}
+
+.email input:focus~span::before,
+.email input:focus~span::before {
+    width: 100%;
+}
+
+/*telefono*/
+
+form .phone {
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin: 30px 0;
+}
+
+.phone input {
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+
+}
+
+.phone label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+    ;
+}
+
+.phone span::before {
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: #8FA354;
+    transition: .5s;
+}
+
+.phone input:focus~label,
+.phone input:focus~label {
+    top: -5px;
+    color: #8FA354;
+}
+
+.phone input:focus~span::before,
+.phone input:focus~span::before {
+    width: 100%;
+}
+
+
+.inicio {
+    margin: 30px 0;
+    text-align: center;
+    font-size: 16px;
+    color: black;
+}
+
+.inicio a {
+    color: rgb(0, 0, 104);;
+    text-decoration: none;
+}
+
+.inicio a:hover {
+    text-decoration: underline;
+}
+
+.volver {
+    margin: 30px 0;
+    text-align: center;
+    font-size: 16px;
+    color: black;
+}
+
+.volver a {
+    color: rgb(0, 0, 104);;
+    text-decoration: none;
+}
+
+.volcer a:hover {
+    text-decoration: underline;
+}
+
+.registerbtn {
+    width: 100%;
+    height: 50px;
+    border: 5px solid;
+    background: #007839;
+    border-radius: 25px;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    outline: none;
+}
+
+.registerbtn:hover {
+    border-color: #007839;
+    transition: .5s;
+}
+
+/*MENU*/
+
+.menu {
+    font-family: "Bebas Neue", sans-serif;
+    position: absolute;
+    top: 3%;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    width: 40px;
+
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+
+}
+
+.menu .navbar ul li a {
+    font-size: 30px;
+    padding: 40px;
+    color: #3f3f3f;
+    display: block;
+    font-weight: bold;
+
+}
+
+.navbar a {
+    margin-right: 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .formulario {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+    }
+
+    .formulario form {
+        padding: 0 20px;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu .navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu .navbar ul li a {
+        padding: 10px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .formulario {
+        padding: 10px;
+    }
+
+    .formulario h1 {
+        font-size: 24px;
+    }
+
+    .formulario form {
+        padding: 0 10px;
+    }
+
+    .username input, 
+    .password input, 
+    .confirmpassword input, 
+    .email input, 
+    .phone input {
+        height: 35px;
+        font-size: 14px;
+    }
+
+    .username label, 
+    .password label, 
+    .confirmpassword label, 
+    .email label, 
+    .phone label {
+        font-size: 14px;
+    }
+
+    .registerbtn {
+        height: 45px;
+        font-size: 16px;
+    }
+
+    .menu .navbar ul li a {
+        padding: 8px;
+        font-size: 14px;
+    }
+}

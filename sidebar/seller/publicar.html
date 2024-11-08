@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="/sidebar/seller/publicar.css">
+    <title>Publica un producto</title>
+    <link rel="icon" href="/Imagenes/LOGO.ico">
+</head>
+
+<body>
+
+    <div class="singnup-box">
+        <h1>¿Que deseas publicar?</h1>
+        <form class="form register">
+            <div class="drag-area">
+                <h2 id="area">Arrastra y suelta imagenes</h2>
+                <span>O</span>
+                <input type="file" id="archivos" class="hidden">
+                <input type="file" name="" id="input-file" hidden multiple>
+            </div>
+            <div id="preview"></div>
+
+            <input type="text" placeholder="Nombre de el producto" id="product">
+            <input type="text" placeholder="Caracteristicas del producto" id="characteristic">
+            <input type="number" placeholder="Ingresa la cantidad de productos que tienes en disposición" id="number-products">
+            <input type="text" placeholder="Ingresa la marca de el producto que vas a vender" id="marc">
+            
+            <button id="publicar" class="publicar">Publicar</button>
+        </form>
+    </div>
+    <script src="/sidebar/seller/publicar.js" type="module"></script>
+    <script src="/user/authvalide.js" type="module"></script>
+</body>
+
+</html>

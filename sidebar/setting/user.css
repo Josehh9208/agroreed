@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+body {
+    background: #232323;
+}
+
+header {
+    background-color: #242424;
+    margin-bottom: 30px;
+}
+
+header nav {
+    width: 85%;
+    margin: 0 auto;
+}
+
+header nav .logo-search {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    border-bottom: 1px solid #99999978;
+}
+
+header nav .logo-search .logo {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+header nav .logo-search .logo span {
+    color: #8FA354;
+}
+
+header nav .logo-search .search-box {
+    width: 500px;
+    height: 40px;
+    position: relative;
+}
+
+header nav .logo-search .search-box input {
+    width: 100%;
+    height: 100%;
+    padding: 0 50px 0 12px;
+    border-radius: 30px;
+    outline: none;
+    border: none;
+}
+
+header nav .logo-search .search-box i {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 50px;
+    text-align: center;
+    line-height: 40px;
+    border-left: 1px solid #99999978;
+    cursor: pointer;
+    color: #242424;
+}
+
+header nav .logo-search .icon a {
+    color: #fff;
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+header nav .logo-search .icon a:hover {
+    color: #8FA354;
+}
+
+.profile {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+/* Ajustes para centrar el texto */
+h4.text-center {
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Imagen centrada */
+img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.d-flex.justify-content-center img {
+    display: block;
+    margin: 0 auto;
+    width: 150px;
+}
+
+.profile-sidebar {
+    width: 25%;
+    background-color: #fff;
+    border-radius: 10px;
+    margin-right: 20px; /* Añadir margen a la derecha */
+}
+
+.profile-sidebar h4 {
+    padding: 20px;
+    background-color: #007839;
+    color: #172856;
+    font-size: 18px;
+}
+
+.profile-sidebar i {
+    margin-right: 10px;
+}
+
+.profile-sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.profile-sidebar ul li {
+    padding: 17px 20px;
+    color: #172856;
+    border-bottom: 1px solid #e9eaf0;
+    cursor: pointer;
+}
+
+.profile-sidebar ul li:hover {
+    background-color: #8FA354;
+}
+
+.profile-sidebar ul li a {
+    color: #172856;
+}
+
+.profile-content {
+    width: 72%;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.card {
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e9eaf0;
+    padding: 15px 20px;
+}
+
+.title h4 {
+    color: #242424;
+    text-transform: uppercase;
+}
+
+.btn {
+    padding: 15px 30px;
+    color: #242424;
+    background-color: #8FA354;
+    border: 2px solid #8FA354;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    background-color: transparent;
+    color: #8FA354;
+}
+/* General */
+/* Estructura básica */
+.profile-user {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+/* Estilos de las etiquetas y los inputs */
+.labels {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+    color: #333;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Botón */
+.profile-button {
+    background-color: #007839;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.profile-button:hover {
+    background-color: #172856;
+}
+
+/* Estilo responsivo */
+@media (max-width: 768px) {
+    .profile-user {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container {
+        width: 100%;
+        padding: 20px;
+    }
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .profile {
+        flex-direction: column;
+    }
+
+    .profile-sidebar,
+    .profile-content {
+        width: 100%;
+    }
+
+    header nav .logo-search {
+        flex-direction: column;
+        height: auto;
+    }
+
+    header nav .logo-search .search-box {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    header nav .logo-search .icon {
+        margin-top: 10px;
+    }
+
+    header nav ul li {
+        display: block;
+        margin: 0;
+        padding: 10px 0;
+    }
+
+    .profile-content {
+        width: 100%;
+    }
+}

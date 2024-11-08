@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+body {
+    background: #232323;
+}
+
+.membership {
+    padding: 15px 30px;
+    color: #0c0c0c;
+    background-color: #8FA354;
+    border: 2px solid #8FA354;
+    border-radius: 5px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.membership:hover {
+    background-color: transparent;
+    color: #8FA354;
+}
+
+.titile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e9eaf0;
+}
+
+.titile h4 {
+    color: #242424;
+    text-transform: uppercase;
+    padding: 15px 20px;
+}
+
+.titile a {
+    margin-right: 20px;
+    color: #232323;
+    font-weight: bold;
+}
+
+.titile a:hover {
+    text-decoration: underline;
+}
+
+.payments {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    background-color: #242424;
+    margin-bottom: 30px;
+}
+
+header nav {
+    width: 85%;
+    margin: 0 auto;
+}
+
+header nav .logo-search {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    border-bottom: 1px solid #99999978;
+}
+
+header nav .logo-search .logo {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+header nav .logo-search .search-box {
+    width: 500px;
+    height: 40px;
+    position: relative;
+}
+
+header nav .logo-search .logo span{
+    color: #8FA354;
+}
+
+header nav .logo-search .search-box input {
+    width: 100%;
+    height: 100%;
+    padding: 0 50px 0 12px;
+    border-radius: 30px;
+    outline: none;
+    border: none;
+}
+
+header nav .logo-search .search-box i {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 50px;
+    text-align: center;
+    line-height: 40px;
+    border-left: 1px solid #99999978;
+    cursor: pointer;
+    color: #242424;
+}
+
+header nav .logo-search .icon a {
+    color: #fff;
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+header nav .logo-search .icon a:hover {
+    color: #8FA354;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 18px 0;
+    margin-right: 50px;
+    position: relative;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-transform: capitalize;
+}
+
+header nav ul li::after {
+    position: absolute;
+    content: '';
+    bottom: -1px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0px;
+    height: 10px;
+    background-color: #e9eaf0;
+    clip-path: polygon(50% 40%, 0 100%, 100% 100%);
+}
+
+header nav ul li:hover::after,
+header nav ul li.active::after {
+    width: 12px;
+}
+
+.card-supplier {
+  flex: 1; /* make cards equal in width */
+  margin: 10px; /* add some margin between cards */
+}
+
+.card-supplier img {
+  width: 100%; /* make image take full width of card */
+  height: 150px; /* set a fixed height for the image */
+  object-fit: cover; /* make image cover the entire area */
+}
+
+.card-body {
+  display: flex; /* make card body a flex container */
+  flex-direction: column; /* make card body a column */
+  align-items: center; /* center card body content horizontally */
+  padding: 20px; /* add some padding to card body */
+}
+
+.card-title {
+  font-size: 18px; /* set a font size for card title */
+  margin-bottom: 10px; /* add some margin between title and text */
+}
+
+.card-text {
+  font-size: 14px; /* set a font size for card text */
+}
+
+.membership {
+  width: 100%; /* make button take full width of card */
+  margin-top: 20px; /* add some margin between button and card text */
+}

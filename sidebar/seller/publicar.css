@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&display=swap');
+
+body {
+    background-color: #242424;
+    font-family: 'Poppins', sans-serif;
+}
+
+.singnup-box {
+
+    width: 450px;
+    height: 750px;
+    margin: auto;
+    border-radius: 3px;
+    background-color: rgb(54, 54, 54);
+    color: ghostwhite;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 15px;
+}
+
+h2{
+    text-align: center;
+}
+
+h4 {
+    text-align: center;
+}
+
+form {
+    width: 300px;
+    margin-left: 20px;
+}
+
+.drag-area{
+    border: 5px dashed #ddd;
+    height: 350px;
+    width: 400px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.drag-area.active {
+    background-color: ghostwhite;
+    color: black;
+    border: 2px dashed #618ac9;
+}
+
+.drag-area h2 {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.drag-area span {
+    font-size: 25px;
+    font-weight: 500;
+    color: ghostwhite;
+}
+
+.drag-area button {
+    padding: 10px 25px;
+    font-size: 20px;
+    border: 0;
+    outline: none;
+    background-color: #007839;
+    color: ghostwhite;
+    border-radius: 50px;
+    cursor: pointer;
+    margin: 20px;
+}
+
+.file-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border: solid 1px ghostwhite;
+}
+
+#preview {
+    margin-top: 10px;
+}
+
+.status-text{
+    padding: 0 10px;
+}
+
+.succes {
+    color: #007839;
+}
+
+.failure {
+    color: #ff0000;
+}
+
+
+form input {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 10px;
+    padding: 7px;
+    border: none;
+    border: 1px solid gray;
+    border-radius: 50px;
+    outline: none;
+}
+
+.publicar {
+    width: 100%;
+    height: 50px;
+    border: 5px solid;
+    background: #007839;
+    border-radius: 25px;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    outline: none;
+}
+
+.publicar:hover{
+    border-color: #007839;
+    transition: 0.5s ease;
+}
+
+p{
+
+    text-align: center;
+    padding-top: 20px;
+    font-size: 15px;
+}
+
+.para-2{
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    margin-top: -10px;
+}
+
+.para-2 a{
+    color: #007839;
+
+}
+

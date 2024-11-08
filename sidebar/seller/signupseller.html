@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="/sidebar/seller/signupseller.css">
+    <title>Registra tu empresa</title>
+    <link rel="icon" href="/Imagenes/LOGO.ico">
+
+</head>
+
+<body>
+
+    <div class="formulario">
+        <h1>Registra tu empresa</h1>
+        <form method="post">
+            <div class="company">
+                <input type="text" id="name">
+                <label>Nombre de de la empresa</label>
+            </div>
+            <div class="ubication">
+                <input type="text" id="ubication">
+                <label>Ubicación de la empresa</label>
+            </div>
+
+            <div class="products">
+                <input type="text" id="password">
+                <label>Tipos de productos que vende</label>
+            </div>
+            <div class="nit">
+                <input type="number" id="nit">
+                <label>Ingrese su nit</label>
+            </div>
+
+
+            <button class="registercompany" id="registercompany">Registra tu empresa</button>
+
+            <div class="volver">
+            <a href="/home/home.html">Volver</a>
+            </div>
+
+        </form>
+    </div>
+
+    <script src="/sidebar/seller/signupseller.js" type="module"></script>
+    <script src="/user/authvalide.js" type="module"></script>
+</body>
+
+</html>

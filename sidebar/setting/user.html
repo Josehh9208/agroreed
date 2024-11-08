@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil de Usuario</title>
+    <link rel="icon" href="/Imagenes/LOGO.ico">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="/sidebar/setting/user.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo-search">
+                <a href="/home/home.html" class="logo">AGRO<span>REED</span></a>
+                <div class="search-box">
+                    <input type="search" placeholder="Buscar">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+
+                <div class="icon">
+                    <a href="/home/carrito.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <section class="profile">
+        <div class="profile-sidebar">
+            <h4><i class="fa-solid fa-bars"> </i>Menú</h4>
+            <ul>
+                <li>
+                    <i class="fa-solid fa-house"></i>
+                    <a href="/home/home.html">Inicio</a>
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    <a id="logout">Cerrar sesión</a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-user-minus"></i>
+                    <a id="delete1" >Borrar cuenta</a>
+                </li>
+            </ul>
+        </div>
+        <div class="profile-user">
+            <div class="container rounded bg-white mt-5 mb-5">
+                <div class="row">
+                    <div class="col-md-5 border-right">
+                        <div class="p-3 py-5">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <h4 class="text-right">Configuración de Perfil</h4>
+                                <div class="container rounded bg-white mt-5 mb-5">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="p-3 py-5">
+                                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                                    <div class="d-flex flex-column align-items-center text-center p-3 py-5">
+                                                        <input type="file" id="foto" class="hidden">
+                                                        <img class="rounded-circle mt-5" width="150px" id="foto">
+                                                    </div>
+                                                </div>
+                                                <div class="profile-field">
+                                                    <label for="name">Nombre:</label>
+                                                    <p id="name" name="name" contenteditable="true"></p>
+                                                </div>
+                                                <div class="profile-field">
+                                                    <label for="lastname">Apellidos:</label>
+                                                    <p id="lastname" name="lastname" contenteditable="true" ></p>
+                                                </div>
+                                                <div class="profile-field">
+                                                    <label for="entity">Telefono:</label>
+                                                    <p id="phone" name="phone" contenteditable="true"></p>
+                                                </div>
+                                                <div class="profile-field"></div>
+                                                    <label for="lastname">Departamento:</label>
+                                                    <p id="contry" name="contry" contenteditable="true" ></p>
+                                                </div>
+                                                <div class="profile-field">
+                                                    <label for="entity">Municipio:</label>
+                                                    <p id="city" name="city" contenteditable="true"></p>
+                                                </div>
+                                                <div class="mt-5 text-center">
+                                                    <button class="btn btn-primary profile-button"
+                                                         id="guardar">Actualizar Datos</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+    </section>
+    <script src="/sidebar/setting/user.js" type="module"></script>
+    <script src="/user/authvalide.js" type="module"></script>
+</body>
+
+</html>

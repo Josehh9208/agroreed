@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="/user/register/register.css">
+    <title>Registro</title>
+
+</head>
+
+<body>
+
+    <div class="formulario">
+        <h1>Registro</h1>
+        <form method="post">
+            <div class="username">
+                <input type="text" id="name">
+                <label>Nombre de usuario</label>
+            </div>
+            <div class="username">
+                <input type="text" id="lastname">
+                <label>Apellido de usuario</label>
+            </div>
+            <div class="email">
+                <input type="text" id="email">
+                <label>Correo</label>
+            </div>
+            <div class="phone">
+                <input type="number" id="phone">
+                <label>Número telefónico</label>
+            </div>
+            <div class="password">
+                <input type="password" id="password">
+                <label>Contraseña</label>
+            </div>
+            <div class="confirmpassword">
+                <input type="password" id="confirmPassword">
+                <label>Confirma tu contraseña</label>
+            </div>
+
+
+            <button class="registerbtn" id="register">Registrate</button>
+
+            <div class="inicio">
+                Ya te has registrado? <a href="/user/login/login.html">Inicia</a>
+            </div>
+            <div class="volver">
+                <a href="index.html">Volver</a>
+            </div>
+
+
+    </div>
+    </form>
+    </div>
+    
+    <script src="/user/register/register.js" type="module"></script>
+</body>
+
+</html>
